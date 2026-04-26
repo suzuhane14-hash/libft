@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/25 20:39:08 by omito             #+#    #+#             */
-/*   Updated: 2026/04/26 09:47:34 by omito            ###   ########.fr       */
+/*   Created: 2026/04/25 22:54:10 by omito             #+#    #+#             */
+/*   Updated: 2026/04/26 09:39:57 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <ctype.h>
 
-int	ft_isalpha(int c)
+int	ft_isdigit(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	if (c >= '0' && c <= '9')
 		return (1);
 	else
 		return (0);
@@ -23,11 +23,11 @@ int	ft_isalpha(int c)
 
 //int main (void)
 //{
-//	int	a;
-//	int	b;
+//	int a;
+//	int b;
 //
-//	a = 70; 
-//	b = 91;
-//	printf ("自作関数のaの結果は%d\nbの結果は%d\n", ft_isalpha(a), ft_isalpha(b));
-//	printf ("本物のaの結果は%d\nbの結果は%d\n", isalpha(a), isalpha(b));
-//}	
+//	a = 129;
+//	b = 49;
+//	printf ("自作関数のaの結果は%d,bの結果は%d\n", ft_isdigit(a), ft_isdigit(b));
+//	printf ("本物のaの結果は%d,bの結果は%d\n", isdigit(a), isdigit(b));
+//}

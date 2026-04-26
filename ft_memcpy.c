@@ -1,0 +1,44 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/26 18:48:21 by omito             #+#    #+#             */
+/*   Updated: 2026/04/26 19:31:56 by omito            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include <string.h>
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	unsigned char		*d;
+	const unsigned char	*s;
+	size_t				i;
+
+	s = src;
+	d = dest;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
+}
+
+//int main(void)
+//{
+//	char dest[20];
+//	char src[] = "abcdefg";
+//	size_t n = 4;
+//	printf ("処理前は、%s\n", src);
+//	ft_memcpy(dest, src, n);
+//	printf ("自作関数処理後は、%s\n", dest);
+//	memcpy(dest, src, n);
+//	printf ("本物の関数処理後は、%s\n", dest);
+//	return (0);
+//}

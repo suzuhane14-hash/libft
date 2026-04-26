@@ -1,33 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/25 20:39:08 by omito             #+#    #+#             */
-/*   Updated: 2026/04/26 09:47:34 by omito            ###   ########.fr       */
+/*   Created: 2026/04/26 11:59:03 by omito             #+#    #+#             */
+/*   Updated: 2026/04/26 14:31:33 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <ctype.h>
+#include <string.h>
 
-int	ft_isalpha(int c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	else
-		return (0);
+	size_t			i;
+	unsigned char	*dst;
+
+	i = 0;
+	dst = s;
+	while (i < n)
+	{
+		*dst = c;
+		dst++;
+		i++;
+	}
+	return (s);
 }
 
-//int main (void)
+//int main(void)
 //{
-//	int	a;
-//	int	b;
+//	char str[] = "Hello World";
+//	int c;
+//	size_t n;
 //
-//	a = 70; 
-//	b = 91;
-//	printf ("自作関数のaの結果は%d\nbの結果は%d\n", ft_isalpha(a), ft_isalpha(b));
-//	printf ("本物のaの結果は%d\nbの結果は%d\n", isalpha(a), isalpha(b));
-//}	
+//	c = 'A';
+//	n = 5;
+//	printf("実行前は %s\n", str);
+//	ft_memset(str, c, n);
+//	printf("実行後は %s\n", str);
+//	return (0);
+//}

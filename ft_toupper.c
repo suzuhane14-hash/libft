@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/25 20:39:08 by omito             #+#    #+#             */
-/*   Updated: 2026/04/26 09:47:34 by omito            ###   ########.fr       */
+/*   Created: 2026/04/26 21:32:05 by omito             #+#    #+#             */
+/*   Updated: 2026/04/26 21:49:48 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <ctype.h>
 
-int	ft_isalpha(int c)
+int	ft_toupper(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	else
-		return (0);
+	if (c >= 'a' && c <= 'z')
+	{
+		c = c -32;
+	}
+	return (c);
 }
 
-//int main (void)
+//int main(void)
 //{
-//	int	a;
-//	int	b;
+//	int a = 97;
+//	int b = 127;
 //
-//	a = 70; 
-//	b = 91;
-//	printf ("自作関数のaの結果は%d\nbの結果は%d\n", ft_isalpha(a), ft_isalpha(b));
-//	printf ("本物のaの結果は%d\nbの結果は%d\n", isalpha(a), isalpha(b));
-//}	
+//	printf ("処理前はa=%d, b=%d\n", a, b);
+//	printf ("自作関数の結果はa=%d, b=%d\n", ft_toupper(a), ft_toupper(b));
+//	printf ("自作関数の結果はa=%d, b=%d\n", toupper(a), toupper(b));
+//}
