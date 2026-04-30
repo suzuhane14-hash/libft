@@ -6,15 +6,17 @@
 /*   By: omito <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 16:03:23 by omito             #+#    #+#             */
-/*   Updated: 2026/04/23 16:57:14 by omito            ###   ########.fr       */
+/*   Updated: 2026/04/28 12:18:46 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <string.h>
+#include <string.h>
 
-int ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
+
 	i = 0;
 	{
 		while (str[i] != '\0')
@@ -23,11 +25,10 @@ int ft_strlen(char *str)
 	return (i);
 }
 
-//#include <stdio.h>
-//
 //int main(void)
 //{
 //	char test[] = "abcde";
-//	printf("文字数は%d\n", ft_strlen(test));
-//}	
-//	
+//	printf("自作関数の結果、文字数は%zu\n", ft_strlen(test));
+//	printf("本物の関数の結果、文字数は%zu\n", strlen(test));
+//	return (0);
+//}
