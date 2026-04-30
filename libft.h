@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 23:47:27 by omito             #+#    #+#             */
-/*   Updated: 2026/04/30 09:46:57 by omito            ###   ########.fr       */
+/*   Updated: 2026/04/30 23:04:47 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,7 @@ int     ft_isalnum(int c);
 void    ft_bzero(void *s, size_t n);
 int     ft_atoi(const char *nptr);
 void    *ft_calloc(size_t nmemb, size_t size);
+
+char    *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
