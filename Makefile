@@ -6,7 +6,7 @@
 #    By: omito <omito@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/30 10:10:16 by omito             #+#    #+#              #
-#    Updated: 2026/05/01 11:26:01 by omito            ###   ########.fr        #
+#    Updated: 2026/05/01 11:41:13 by omito            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,10 +23,10 @@ $(NAME): $(OBJS)
 %.o: %.c
 	$(cc) $(CFLAGS) -c $< -o $@
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) a.out
 
-fclean:
-	re -f $(NAME)
+fclean: clean
+	rm -f $(NAME)
 rm:
 	fclean all
 
