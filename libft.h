@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 23:47:27 by omito             #+#    #+#             */
-/*   Updated: 2026/04/30 23:04:47 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/01 22:12:36 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdint.h>
 
 int	ft_toupper(int c);
 int	ft_tolower(int c);
@@ -42,5 +43,5 @@ int     ft_atoi(const char *nptr);
 void    *ft_calloc(size_t nmemb, size_t size);
 
 char    *ft_substr(char const *s, unsigned int start, size_t len);
-
+char    *ft_strjoin(char const *s1, char const *s2);
 #endif
