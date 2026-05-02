@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 19:05:19 by omito             #+#    #+#             */
-/*   Updated: 2026/05/02 09:03:48 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/02 21:43:22 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*tri_s;
 	size_t	s1_len;
 	size_t	set_len;
-	char	*start;
-	char	*gorl;
-
+		
 	s1_len = 0;
 	if (!s1 || !set)
 		return (NULL);
 	s1_len = ft_strlen(s1);
-	set_len = ft_strlen(set);
+	while (set[i] != s1[i])
+		i++;
+	start_i = i;
+
 	start = ft_strnstr(s1, set, s1_len);
 	start_index = ft_start_index(start, s1);
 	tri_s = ft_substr(s1, start_index, set_len);
