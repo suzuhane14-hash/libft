@@ -6,51 +6,50 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 19:05:19 by omito             #+#    #+#             */
-/*   Updated: 2026/05/02 21:43:22 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/03 11:51:01 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-static unsigned int	ft_start_index(char *start, char const *s1)
-{
-	while (start[i] != s1[i])
-		i++;
-	return(i);
-}
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*tri_s;
+	char	*trim_s;
 	size_t	s1_len;
-	size_t	set_len;
-		
+	size_t	start_i;
+	size_t	end_i;
+	size_t	len;
+	
 	s1_len = 0;
 	if (!s1 || !set)
 		return (NULL);
 	s1_len = ft_strlen(s1);
-	while (set[i] != s1[i])
-		i++;
-	start_i = i;
-
-	start = ft_strnstr(s1, set, s1_len);
-	start_index = ft_start_index(start, s1);
-	tri_s = ft_substr(s1, start_index, set_len);
-
+	if (s1_len == 0)
+		return (ft_substr(s1, 0, 0));
+	start_i = 0;
+	while (s1[start_i] != '\0' && ft_strchr(set, s1[start_i]))
+			start_i++;
+	end_i = s1_len - 1;
+	while (end_i >= start_i && ft_strchr(set, s1[end_i]))
+			end_i--;
+	if (start_i > end_i)
+		len = 0;
+	else
+		len = end_i - start_i + 1;
+	trim_s = ft_substr(s1, start_i, len);
+	if (!trim_s)
+		return (NULL);
+	return (trim_s);
 }
 
-char    *ft_strtrim(char const *s1, char const *set)
+int main (void)
 {
-	while (s1[i] != '\0')
-	{
-		while (set[j] != '\0')
-		{
-			if (ft_strncmp(&s1[i], &set[j], 1) != 0)
-				break;
-			j++;
-		}
-		i++;
-	}
-
-
+	char const s1 = "asdfgg";
+	char const set = "ag";
+	char *s;
+	s = ft_strtrim(s1, set);
+	printf("s =%s", s);
+	free(s);
+	return(0);
+}	
