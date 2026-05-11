@@ -6,13 +6,13 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:47:02 by omito             #+#    #+#             */
-/*   Updated: 2026/05/11 10:50:37 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/12 01:14:34 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	i;
 	int	words_counter;
@@ -26,20 +26,33 @@ int	count_words(char const *s, char c)
 	{
 		while (s[i] != c)
 			i++;
-		words_counter++;
+		if (s[i] == c)
+			words_counter++;
 	}
 	return (words_counter);
 }
+//単語の長さを図る関数（word_len)
 
-int	count_words_str(char const *s)
+char	*malloc_words_str(char const *s, char **str, int words_counter)
 {
-	int	i;
-	int	words_str_counter;
+	unsigned int	i;
+	size_t	words_str_len;
 
-	i = 0;
+	words_str_index = 0;
 	words_str_counter = 0;
-	//count_wordsのiの値が欲しい
-
+	while(j == words_counter - 1)
+	{
+		while(s[words_str_index] == c)
+			words_str_index++;
+		while(s[i] != c)
+			words_str_len++;
+		words_str_index = words_str_index - 1;
+		str[j][k] = ft_substr(char const *s, unsigned int words_str_index,
+			       	size_t words_sr_len);
+		j++;
+	}
+	return
+}	
 
 char	**ft_split(char const *s, char c)
 {
@@ -48,12 +61,16 @@ char	**ft_split(char const *s, char c)
 	int	k;
 	
 	j = 0;
-	str[j] = malloc(words_counter + 1);
-	if (!str[j])
+	str = malloc(sizeof(char *) * count_words(s, c) + 1);
+	if (!str)
 		return (NULL);
-	}
-	str[j][k] 
-	return (
+	
+	while(s[j] != '\0' && j == [words_counter - 1])
+	{	
+	        str[j][k] = ft_substr(char const *s, unsigned int words_str_index,                                 size_t words_sr_len);
+		j++;
+ 	}
+	return (str);
 }
 
 int main(void)
