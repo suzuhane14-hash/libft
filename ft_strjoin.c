@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/30 23:07:16 by omito             #+#    #+#             */
-/*   Updated: 2026/05/01 22:17:23 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/08 00:29:09 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char			*new_s;
-	size_t			new_s_len;
 	size_t			s1_len;
 	size_t			s2_len;
 
@@ -30,8 +29,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	new_s = malloc(s1_len + s2_len + 1);
 	if (!new_s)
 		return (NULL);
-	s1_len = ft_strlcpy(new_s, s1, s1_len);
-	new_s_len = ft_strlcat(new_s, s2, s1_len + s2_len + 1);
+	ft_strlcpy(new_s, s1, s1_len + 1);
+	ft_strlcat(new_s, s2, s1_len + s2_len + 1);
 	return (new_s);
 }
 

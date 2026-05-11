@@ -6,36 +6,53 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 22:47:02 by omito             #+#    #+#             */
-/*   Updated: 2026/05/04 15:49:40 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/11 10:50:37 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	**ft_split(char const *s, char c)
+#include "libft.h"
+
+int	count_words(char const *s, char c)
 {
 	int	i;
-	int	counter;
-	char	**str;
-	int	j;
+	int	words_counter;
 	
 	i = 0;
-	j = 0;
-	counter = 0;
+	words_counter = 0;
 	
 	while (s[i] == c)
 		i++;
 	while (s[i] != '\0')
 	{
 		while (s[i] != c)
-		{	i++;
-			char_counter++;	
-		}	
+			i++;
 		words_counter++;
-		str[j] = malloc(char_counter + 1);
-		
-		if (!str[j])
-			return (NULL);
-		j++;
 	}
+	return (words_counter);
+}
+
+int	count_words_str(char const *s)
+{
+	int	i;
+	int	words_str_counter;
+
+	i = 0;
+	words_str_counter = 0;
+	//count_wordsのiの値が欲しい
+
+
+char	**ft_split(char const *s, char c)
+{
+	char	**str;
+	int	j;
+	int	k;
+	
+	j = 0;
+	str[j] = malloc(words_counter + 1);
+	if (!str[j])
+		return (NULL);
+	}
+	str[j][k] 
 	return (
 }
 
