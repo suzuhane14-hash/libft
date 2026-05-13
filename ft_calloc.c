@@ -6,12 +6,12 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 12:27:31 by omito             #+#    #+#             */
-/*   Updated: 2026/05/01 23:11:10 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/13 21:42:10 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -28,22 +28,22 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (ptr);
 }
 
-int main (int argc, char **argv)
-{
-	char *res;
-
-	if (argc != 3)
-		return (1);
-	res = ft_calloc(atoi(argv[1]), atoi(argv[2]));
-	if (res != NULL)
-		printf ("自作関数の結果、メモリーは確保されました！\n");
-	else
-		printf ("自作関数の結果、メモリーは確保されませんでした\n");
-	free (res);
-	res = calloc(atoi(argv[1]), atoi(argv[2]));
-	if (res != NULL)
-		printf ("本物の関数の結果、メモリーは確保されました！\n");
-	else
-		printf ("本物の関数の結果、メモリーは確保されませんでした\n");
-	free (res);
-}
+//int main (int argc, char **argv)
+//{
+//	char *res;
+//
+//	if (argc != 3)
+//		return (1);
+//	res = ft_calloc(atoi(argv[1]), atoi(argv[2]));
+//	if (res != NULL)
+//		printf ("自作関数の結果、メモリーは確保されました！\n");
+//	else
+//		printf ("自作関数の結果、メモリーは確保されませんでした\n");
+//	free (res);
+//	res = calloc(atoi(argv[1]), atoi(argv[2]));
+//	if (res != NULL)
+//		printf ("本物の関数の結果、メモリーは確保されました！\n");
+//	else
+//		printf ("本物の関数の結果、メモリーは確保されませんでした\n");
+//	free (res);
+//}

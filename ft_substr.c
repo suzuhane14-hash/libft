@@ -5,18 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/29 20:42:29 by omito             #+#    #+#             */
+/*   Updated: 2026/05/13 21:40:24 by omito            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 20:49:36 by omito             #+#    #+#             */
 /*   Updated: 2026/05/12 17:12:13 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
-	char 		*sub_s;
+	char			*sub_s;
 	unsigned int	s_len;
 
 	i = 0;
@@ -46,4 +58,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 //		return (1);
 //	printf("部分文字列は%s\n", ft_substr(argv[1], atoi(argv[2]), atoi(argv[3])));
 //	return (0);
-//}
+//}	
