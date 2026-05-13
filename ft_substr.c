@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 20:49:36 by omito             #+#    #+#             */
-/*   Updated: 2026/04/30 23:09:30 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/12 17:12:13 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return ((char *)sub_s);
 }
 
-int main(int argc, char **argv)
-{
-	if (argc != 4)
-		return (1);
-	printf("部分文字列は%s\n", ft_substr(argv[1], atoi(argv[2]), atoi(argv[3])));
-	return (0);
-}
+//int main(int argc, char **argv)
+//{
+//	if (argc != 4)
+//		return (1);
+//	printf("部分文字列は%s\n", ft_substr(argv[1], atoi(argv[2]), atoi(argv[3])));
+//	return (0);
+//}

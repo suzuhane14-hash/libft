@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 19:05:19 by omito             #+#    #+#             */
-/*   Updated: 2026/05/03 11:51:01 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/12 17:25:42 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 int main (void)
 {
-	char const s1 = "asdfgg";
-	char const set = "ag";
+	char const *s1 = "asdfgg";
+	char const *set = "ag";
 	char *s;
 	s = ft_strtrim(s1, set);
 	printf("s =%s", s);
