@@ -6,19 +6,19 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/13 23:53:33 by omito             #+#    #+#             */
-/*   Updated: 2026/05/14 10:57:59 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/14 13:22:00 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	f(unsigned int i, char c)
-{
-	(void)i;
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
-}
+//char	f(unsigned int i, char c)
+//{
+//	(void)i;
+//	if (c >= 'a' && c <= 'z')
+//		return (c - 32);
+//	return (c);
+//}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

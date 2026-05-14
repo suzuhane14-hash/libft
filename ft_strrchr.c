@@ -6,12 +6,12 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 12:53:42 by omito             #+#    #+#             */
-/*   Updated: 2026/04/28 14:20:39 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/14 13:24:40 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
+//#include <stdio.h>
 
 char	*ft_strrchr(const char *str, int c)
 {
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *str, int c)
 		str++;
 	while (str >= tmp)
 	{
-		if (*str == c)
+		if (*str == (char)c)
 			return ((char *)str);
 		str--;
 	}

@@ -6,19 +6,19 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 00:30:11 by omito             #+#    #+#             */
-/*   Updated: 2026/05/14 10:59:15 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/14 13:22:23 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	f(unsigned int i, char *c)
-{
-	(void)i;
-	if (*c >= 'a' && *c <= 'z')
-		*c = *c - 32;
-	return ;
-}
+//void	f(unsigned int i, char *c)
+//{
+//	(void)i;
+//	if (*c >= 'a' && *c <= 'z')
+//		*c = *c - 32;
+//	return ;
+//}
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
