@@ -1,47 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/14 00:30:11 by omito             #+#    #+#             */
-/*   Updated: 2026/05/14 10:59:15 by omito            ###   ########.fr       */
+/*   Created: 2026/05/14 09:22:18 by omito             #+#    #+#             */
+/*   Updated: 2026/05/14 10:17:21 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	f(unsigned int i, char *c)
+void	ft_putchar_fd(char c, int fd)
 {
-	(void)i;
-	if (*c >= 'a' && *c <= 'z')
-		*c = *c - 32;
-	return ;
-}
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
-{
-	unsigned int	i;
-
-	i = 0;
-	if (!s || !f)
+	if (fd < 0)
 		return ;
-	while (s[i] != '\0')
-	{
-		f(i, &s[i]);
-		i++;
-	}
+	write(fd, &c, 1);
 	return ;
 }
 
-//#include <stdio.h>
-//
 //int main (void)
 //{
-//	char s[] = "aduwcuAA";
-//
-//	ft_striteri(s, f);
-//    	printf("Result: %s\n", s);
-//    	return (0);
+//	char c = 'A';
+//	int fd = -1;
+//	ft_putchar_fd(c,fd);
 //}

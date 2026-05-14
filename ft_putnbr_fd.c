@@ -1,47 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/14 00:30:11 by omito             #+#    #+#             */
-/*   Updated: 2026/05/14 10:59:15 by omito            ###   ########.fr       */
+/*   Created: 2026/05/14 11:03:13 by omito             #+#    #+#             */
+/*   Updated: 2026/05/14 11:55:40 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	f(unsigned int i, char *c)
+void	ft_putnbr_fd(int n, int fd)
 {
-	(void)i;
-	if (*c >= 'a' && *c <= 'z')
-		*c = *c - 32;
-	return ;
-}
+	long	nb;
+	char	c;
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
-{
-	unsigned int	i;
-
-	i = 0;
-	if (!s || !f)
+	nb = n;
+	if (fd < 0)
 		return ;
-	while (s[i] != '\0')
+	if (nb < 0)
 	{
-		f(i, &s[i]);
-		i++;
+		ft_putchar_fd('-', fd);
+		nb = nb * -1;
 	}
+	if (nb >= 10)
+		ft_putnbr_fd(nb / 10, fd);
+	c = nb % 10 + '0';
+	ft_putchar_fd(c, fd);
 	return ;
 }
 
-//#include <stdio.h>
-//
-//int main (void)
+//int main(void)
 //{
-//	char s[] = "aduwcuAA";
-//
-//	ft_striteri(s, f);
-//    	printf("Result: %s\n", s);
-//    	return (0);
+//	int n = -7;
+//	int fd = 1;
+//	ft_putnbr_fd(n, fd);
 //}

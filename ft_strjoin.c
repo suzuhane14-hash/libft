@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/30 23:07:16 by omito             #+#    #+#             */
-/*   Updated: 2026/05/08 00:29:09 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/14 11:56:45 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	s1_len = 0;
 	s2_len = 0;
-
 	if (!s2 || !s1)
 		return (NULL);
 	s1_len = ft_strlen(s1);
