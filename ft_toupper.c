@@ -6,10 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 21:32:05 by omito             #+#    #+#             */
-/*   Updated: 2026/04/26 21:49:48 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:27:51 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
@@ -19,4 +20,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-
