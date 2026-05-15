@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -28,22 +27,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (ptr);
 }
 
-//int main (int argc, char **argv)
-//{
-//	char *res;
-//
-//	if (argc != 3)
-//		return (1);
-//	res = ft_calloc(atoi(argv[1]), atoi(argv[2]));
-//	if (res != NULL)
-//		printf ("自作関数の結果、メモリーは確保されました！\n");
-//	else
-//		printf ("自作関数の結果、メモリーは確保されませんでした\n");
-//	free (res);
-//	res = calloc(atoi(argv[1]), atoi(argv[2]));
-//	if (res != NULL)
-//		printf ("本物の関数の結果、メモリーは確保されました！\n");
-//	else
-//		printf ("本物の関数の結果、メモリーは確保されませんでした\n");
-//	free (res);
-//}

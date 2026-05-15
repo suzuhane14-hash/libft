@@ -24,11 +24,3 @@ t_list	*ft_lstnew(void *content)
 	return (node);
 }
 
-//int main(void)
-//{
-//	char *c = "apple";
-//	t_list *node;
-//	node = ft_lstnew((void *)c);
-//	printf ("%s\n", (char *)node->content);
-//	free(node);
-//}

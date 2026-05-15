@@ -12,13 +12,6 @@
 
 #include "libft.h"
 
-//void	f(unsigned int i, char *c)
-//{
-//	(void)i;
-//	if (*c >= 'a' && *c <= 'z')
-//		*c = *c - 32;
-//	return ;
-//}
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
@@ -35,13 +28,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	return ;
 }
 
-//#include <stdio.h>
-//
-//int main (void)
-//{
-//	char s[] = "aduwcuAA";
-//
-//	ft_striteri(s, f);
-//    	printf("Result: %s\n", s);
-//    	return (0);
-//}

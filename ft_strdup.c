@@ -36,22 +36,3 @@ char	*ft_strdup(const char *s)
 	return (buf);
 }
 
-//int main(int argc, char **argv)
-//{
-//	char *res;
-//	if (argc != 2)
-//		return (1);
-//	res = ft_strdup(argv[1]);
-//	if (res != NULL)
-//		printf ("自作関数の結果、処理は成功しました！コピーされた文字列は%s\n", res);
-//	else
-//		printf ("自作関数の結果、処理は失敗しました！\n");
-//	free(res);
-//	res = strdup(argv[1]);
-//	if (res != NULL)
-//		printf ("本物の関数の結果、処理は成功しました！コピーされた文字列は%s\n", res);
-//	else
-//		printf ("自作関数の結果、処理は失敗しました！\n");
-//	free(res);
-//	return (0);
-//}

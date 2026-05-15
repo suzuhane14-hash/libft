@@ -29,16 +29,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-//int main(void)
-//{
-//	char str[] = "Hello World";
-//	int c;
-//	size_t n;
-//
-//	c = 'A';
-//	n = 5;
-//	printf("実行前は %s\n", str);
-//	ft_memset(str, c, n);
-//	printf("実行後は %s\n", str);
-//	return (0);
-//}

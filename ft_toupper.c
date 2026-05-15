@@ -22,12 +22,3 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-//int main(void)
-//{
-//	int a = 97;
-//	int b = 127;
-//
-//	printf ("処理前はa=%d, b=%d\n", a, b);
-//	printf ("自作関数の結果はa=%d, b=%d\n", ft_toupper(a), ft_toupper(b));
-//	printf ("自作関数の結果はa=%d, b=%d\n", toupper(a), toupper(b));
-//}

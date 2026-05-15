@@ -25,10 +25,3 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
-//int main(void)
-//{
-//	char test[] = "abcde";
-//	printf("自作関数の結果、文字数は%zu\n", ft_strlen(test));
-//	printf("本物の関数の結果、文字数は%zu\n", strlen(test));
-//	return (0);
-//}

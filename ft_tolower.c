@@ -22,12 +22,3 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-//int main (void)
-//{
-//	int a = 65;
-//	int b = 224;
-//
-//	printf ("処理前はa=%d, b=%d\n", a, b);
-//	printf ("自作関数の結果はa=%d, b=%d\n", ft_tolower(a), ft_tolower(b));
-//  	printf ("自作関数の結果はa=%d, b=%d\n", tolower(a), tolower(b));
-//}

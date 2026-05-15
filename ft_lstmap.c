@@ -12,15 +12,6 @@
 
 #include "libft.h"
 
-//void *f(void *content)
-//{
-//	return (content);
-//}
-//
-//void del(void *content)
-//{
-//	(void)content;
-//}	
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*lst2;
@@ -47,16 +38,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (lst2);
 }
 
-//int main(void)
-//{
-//	t_list	*lst;
-//	t_list	*lst2;
-//	t_list	*node;
-//
-//	lst = ft_lstnew("banana");
-//	node = ft_lstnew("fash");
-//	ft_lstadd_back(&lst, node);
-//	lst2 = ft_lstmap(lst, f, del);
-//	printf ("%s\n", (char *)lst2->content);
-//	printf ("%s\n", (char *)lst2->next->content);
-//}	

@@ -32,9 +32,3 @@ void	ft_putnbr_fd(int n, int fd)
 	return ;
 }
 
-//int main(void)
-//{
-//	int n = -7;
-//	int fd = 1;
-//	ft_putnbr_fd(n, fd);
-//}

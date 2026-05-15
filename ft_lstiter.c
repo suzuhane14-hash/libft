@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-//void  f(void *content)
-//{
-//	printf ("%s\n", (char *)content);
-//}
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -32,13 +28,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	return ;
 }
 
-//int main(void)
-//{
-//	t_list *lst;
-//	t_list *node;
-//
-//	lst = ft_lstnew("banana");
-//	node = ft_lstnew("fish");
-//	ft_lstadd_back(&lst, node);
-//	ft_lstiter(lst,f);
-//}	

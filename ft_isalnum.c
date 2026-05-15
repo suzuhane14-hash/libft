@@ -23,18 +23,3 @@ int	ft_isalnum(int c)
 		return (0);
 }
 
-//int main(void)
-//{
-//	int a;
-//	int b;
-//	int c;
-//
-//	a = 66;
-//	b = 48;
-//	c = 3000;
-//
-//	printf ("自作関数はa=%d, b=%d, c=%d\n",
-//	 ft_isalnum(a), ft_isalnum(b), ft_isalnum(c));
-//	printf ("本物はa=%d, b=%d, c=%d\n",
-//	isalnum(a), isalnum(b), isalnum(c));
-//}

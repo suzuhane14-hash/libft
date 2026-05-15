@@ -21,13 +21,3 @@ int	ft_isprint(int c)
 		return (0);
 }
 
-//int main(void)
-//{
-//	int a;
-//	int b;
-//
-//	a = 10;
-//	b = 126;
-//	printf ("自作関数の結果は、a=%d, b=%d\n", ft_isprint(a), ft_isprint(b));
-//	printf ("本物の結果は、a=%d, b=%d\n", isprint(a), isprint(b));
-//}

@@ -21,13 +21,3 @@ int	ft_isdigit(int c)
 		return (0);
 }
 
-//int main (void)
-//{
-//	int a;
-//	int b;
-//
-//	a = 129;
-//	b = 49;
-//	printf ("自作関数のaの結果は%d,bの結果は%d\n", ft_isdigit(a), ft_isdigit(b));
-//	printf ("本物のaの結果は%d,bの結果は%d\n", isdigit(a), isdigit(b));
-//}

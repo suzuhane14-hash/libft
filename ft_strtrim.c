@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -41,13 +40,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (trim_s);
 }
 
-//int main (void)
-//{
-//	char const *s1 = "aaagg";
-//	char const *set = "ag";
-//	char *s;
-//	s = ft_strtrim(s1, set);
-//	printf("s =%s", s);
-//	free(s);
-//	return(0);
-//}	

@@ -20,9 +20,3 @@ void	ft_putstr_fd(char *s, int fd)
 	return ;
 }
 
-//int main(void)
-//{
-//	char *s = "qjfih";
-//	int fd = 1;
-//	ft_putstr_fd(s, fd);
-//}	

@@ -61,9 +61,3 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-//#include <stdio.h>
-//int main(void)
-//{
-//	int n = 1234567;
-//	printf ("%s", ft_itoa(n));
-//}	

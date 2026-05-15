@@ -37,23 +37,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dst_len + src_len);
 }
 
-//int main (void)
-//{
-//	char dst[] = "abcdef";	
-//	const char src[] = "ghijkl";	
-//	size_t size = 8;
-//
-//	printf ("処理前のdstの文字列は、%s\n", dst);
-//	ft_strlcat(dst, src, size);
-//	printf ("自作関数の結合後の文字列は、%s\n", dst);	
-//	printf ("自作関数の結合前のdstの長さ ＋ srcの長さは%zu\n", strlcat(dst, src, size));
-//	strlcat(dst, src, size);
-//	printf ("本物の関数の結合後の文字列は、%s\n", dst);	
-//	printf ("本物の関数の結合前のdstの長さ ＋ srcの長さは%zu\n", strlcat(dst, src, size));
-//	return (0);
-//}	
 
-//strlcat はC言語で文字列を安全に結合するための関数	
-//戻り値は結合しようと試みた全文字列の長さ（結合前のdestの長さ ＋ srcの長さ）
-//strlcat の引数にわざわざ size（バッファの全容量）を渡しているのは、
-//**「たとえ \0 が見つからなくても、この size を超えたら探索を止めてね」**と関数に約束させるため

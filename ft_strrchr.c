@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 char	*ft_strrchr(const char *str, int c)
 {
@@ -29,19 +28,3 @@ char	*ft_strrchr(const char *str, int c)
 	return (NULL);
 }
 
-//int main (int argc, char *argv[])
-//{
-//	char *res;
-//	if (argc != 3)
-//		return (1);
-//	res = ft_strrchr(argv[1], argv[2][0]);
-//	if (res != NULL)
-//		printf ("自作関数が処理した結果、文字は見つかりました\n");
-//	else
-//		printf ("自作関数が処理した結果、文字は見つかりませんでした\n");
-//	res = strrchr(argv[1], argv[2][0]);
-//	if (res != NULL)
-//		printf ("本物の関数関数が処理した結果、文字は見つかりました\n");
-//	else
-//		printf ("本物の関数が処理した結果、文字は見つかりませんでした\n");
-//}

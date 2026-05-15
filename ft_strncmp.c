@@ -32,11 +32,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-//int main(int argc, char *argv[])
-//{
-//	if (argc != 4)
-//		return (1);
-//	printf ("自作関数の結果は、%d\n", ft_strncmp(argv[1], argv[2], atoi(argv[3])));
-//	printf ("本物の関数の結果は、%d\n", strncmp(argv[1], argv[2], atoi(argv[3])));
-//}
-//コマンドラインは文字だからatoiで数字に直している。

@@ -20,9 +20,3 @@ void	ft_putchar_fd(char c, int fd)
 	return ;
 }
 
-//int main (void)
-//{
-//	char c = 'A';
-//	int fd = -1;
-//	ft_putchar_fd(c,fd);
-//}

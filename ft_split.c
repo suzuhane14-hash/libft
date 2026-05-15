@@ -87,23 +87,3 @@ char	**ft_split(char const *s, char c)
 	return (str);
 }
 
-//int main(void)
-//{
-//	char const *s = "asd fggh jjjm";
-//	char c = ' ';
-//	char **str;
-//	int i;
-//
-//	i = 0;
-//	str = ft_split(s, c);
-//	if(!str)
-//		return(1);
-//	while (str[i] != NULL)
-//	{
-//		printf("単語[%d]: %s\n", i, str[i]);
-//        	free(str[i]);
-//        	i++;
-//    	}
-//   	 free(str);
-//   	 return (0);
-//}

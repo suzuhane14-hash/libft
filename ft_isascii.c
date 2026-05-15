@@ -21,13 +21,3 @@ int	ft_isascii(int c)
 		return (0);
 }
 
-//int main(void)
-//{
-//	int a;
-//	int b;
-//
-//	a = 24;
-//	b = 128;
-//	printf ("自作関数の結果　a=%d, b=%d\n", ft_isascii(a), ft_isascii(b));
-//	printf ("本物の結果　a=%d, b=%d\n", isascii(a), isascii(b));
-//}

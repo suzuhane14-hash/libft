@@ -41,20 +41,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-//int main (int argc, char *argv[])
-//{
-//	char *res;
-//
-//	if (argc != 4)
-//		return (1);
-//	res = ft_strnstr(argv[1], argv[2], atoi(argv[3]));
-//	if (res != NULL)
-//		printf ("自作関数の結果、検索文字は見つかりました\n");
-//	else
-//		printf ("自作関数の結果、検索文字は見つかりませんでした\n");
-//	res = strnstr(argv[1], argv[2], atoi(argv[3]));
-//	if (res != NULL)
-//		printf ("本物の関数の結果、検索文字は見つかりました\n");
-//	else
-//		printf ("本物の関数の結果、検索文字は見つかりませんでした\n");
-//}

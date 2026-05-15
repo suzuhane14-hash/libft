@@ -31,15 +31,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-//int main(void)
-//{
-//	char dest[20];
-//	char src[] = "abcdefg";
-//	size_t n = 4;
-//	printf ("処理前は、%s\n", src);
-//	ft_memcpy(dest, src, n);
-//	printf ("自作関数処理後は、%s\n", dest);
-//	memcpy(dest, src, n);
-//	printf ("本物の関数処理後は、%s\n", dest);
-//	return (0);
-//}

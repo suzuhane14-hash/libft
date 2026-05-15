@@ -21,9 +21,3 @@ void	ft_putendl_fd(char *s, int fd)
 	return ;
 }
 
-//int main(void)
-//{
-//	char *s = "adiwv";
-//	int fd = 1;
-//	ft_putendl_fd(s,fd);
-//}	

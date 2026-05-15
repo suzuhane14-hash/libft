@@ -21,13 +21,3 @@ int	ft_isalpha(int c)
 		return (0);
 }
 
-//int main (void)
-//{
-//	int	a;
-//	int	b;
-//
-//	a = 70; 
-//	b = 91;
-//	printf ("自作関数のaの結果は%d\nbの結果は%d\n", ft_isalpha(a), ft_isalpha(b));
-//	printf ("本物のaの結果は%d\nbの結果は%d\n", isalpha(a), isalpha(b));
-//}	

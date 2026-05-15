@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-//void  del(void *content)
-//{
-//      (void) content;
-//}
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
@@ -35,14 +31,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	return ;
 }
 
-//int main(void)
-//{
-//	t_list *lst;
-//	t_list *node;
-//
-//	lst = ft_lstnew("apple");
-//	node = ft_lstnew("banana");
-//	ft_lstadd_back(&lst, node);
-//	ft_lstclear(&lst, del);
-//	printf ("size: %d\n", ft_lstsize(lst));
-//}	

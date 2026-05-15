@@ -36,11 +36,3 @@ int	ft_atoi(const char *nptr)
 	return (sign * i);
 }
 
-//int main(int argc, char *argv[])
-//{
-//	if (argc != 2)
-//		return (1);
-//	printf ("自作関数の結果、入力された整数は%d\n", ft_atoi(argv[1]));
-//	printf ("本物の関数の結果、入力された整数は%d\n", atoi(argv[1]));
-//	return (0);
-//}

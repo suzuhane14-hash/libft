@@ -42,16 +42,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-//int main(void)
-//{
-//	char dest[20];
-//	const char str[] = "abcdefg";
-//	size_t n = 4;
-//
-//	printf ("処理前は%s\n", str);
-//	ft_memmove(dest, str, n);
-//	printf ("自作関数の処理後は%s\n", dest);
-//	memmove(dest, str, n);
-//	printf ("本物の関数の処理後は%s\n", dest);
-//	return (0);
-//}

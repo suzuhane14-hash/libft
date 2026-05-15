@@ -33,13 +33,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (new_s);
 }
 
-//int main(int argc, char **argv)
-//{
-//	char	*res;
-//	if (argc != 3)
-//		return (1);
-//	res = ft_strjoin(argv[1], argv[2]);
-//	printf("s1 = %s\ns2 = %s\n", argv[1], argv[2]);
-//	printf("new_s = %s\n", res);
-//	free(res);
-//}

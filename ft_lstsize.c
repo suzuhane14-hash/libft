@@ -27,17 +27,3 @@ int	ft_lstsize(t_list *lst)
 	return (i);
 }
 
-//#include <stdio.h>
-//int main(void)
-//{
-//	t_list *lst;
-//	t_list *node1;
-//	t_list *node2;
-//	
-//	lst = ft_lstnew("apple");
-//	node1 = ft_lstnew("banana");
-//	node2 = ft_lstnew("cherry");
-//	ft_lstadd_front(&lst, node1);
-//	ft_lstadd_front(&lst, node2);
-//	printf("%d\n", ft_lstsize(lst));
-//}

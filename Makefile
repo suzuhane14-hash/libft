@@ -6,7 +6,7 @@
 #    By: omito <omito@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/30 10:10:16 by omito             #+#    #+#              #
-#    Updated: 2026/05/15 18:35:48 by omito            ###   ########.fr        #
+#    Updated: 2026/05/15 18:48:59 by omito            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,8 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-re:
-	fclean all
 
-.PHONY: all clean fclean re
+re: fclean all
+
+bonus: all
+.PHONY: all clean fclean re bonus

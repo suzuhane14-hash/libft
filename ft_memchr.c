@@ -30,20 +30,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-//int main(int argc, char *argv[])
-//{
-//	char *res;
-//	if (argc != 4)
-//		return (1);
-//	res = ft_memchr(argv[1], argv[2][0], atoi(argv[3]));
-//	if (res != NULL)
-//		printf ("自作関数の結果、検索文字は見つかりました\n");
-//	else
-//		printf ("自作関数の結果、検索文字は見つかりませんでした\n");
-//	res = memchr(argv[1], argv[2][0], atoi(argv[3]));
-//	if (res != NULL)
-//		printf ("本物の関数の結果、検索文字は見つかりました\n");
-//	else
-//		printf ("本物の関数の結果、検索文字は見つかりませんでした\n");
-//	return (0);
-//}

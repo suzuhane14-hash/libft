@@ -28,39 +28,3 @@ void	ft_bzero(void *s, size_t n)
 	return ;
 }
 
-//int main(void)
-//{
-//	char str[] = "imagination";
-//	size_t a = 5;
-//	int i = 0;
-//
-//	printf ("実行前");
-//	while (i < 11)
-//	{
-//		printf("%d", str[i]);
-//		i++;
-//	}
-//	printf("\n");
-//	i = 0;
-//
-//	ft_bzero (str, a);
-//	printf ("自作関数実行後");
-//	while (i < 11)
-//	{
-//		printf("%d", str[i]);
-//		i++;
-//	}
-//	printf("\n");
-//
-//	i = 0;
-//	bzero (str, a);
-//	printf ("本物の関数実行後");
-//	while (i < 11)
-//	{
-//		printf("%d", str[i]);
-//		i++;
-//	}
-//	printf("\n");
-//	
-//	return (0);
-//}

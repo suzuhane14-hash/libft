@@ -19,15 +19,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-//int main(void)
-//{
-//	t_list *lst = ft_lstnew("apple");
-//	t_list *new = ft_lstnew("new");
-//
-//	ft_lstadd_front(&lst, new);
-//
-//	printf("%s\n", (char *)lst->content);
-//	printf("%s\n", (char *)lst->next->content);
-//	free(lst->next);
-//	free(lst);
-//}	

@@ -24,17 +24,3 @@ t_list	*ft_lstlast(t_list *lst)
 	return (current);
 }
 
-//#include <stdio.h>
-//int main(void)
-//{
-//	t_list	*lst;
-//	t_list	*node1;
-//	t_list	*node2;
-//
-//	lst = ft_lstnew("apple");
-//	node1 = ft_lstnew("banana");
-//	node2 = ft_lstnew("fish");
-//	ft_lstadd_front(&lst, node1);
-//	ft_lstadd_front(&lst, node2);
-//	printf ("%s\n", (char *)ft_lstlast(lst)->content);
-//}			

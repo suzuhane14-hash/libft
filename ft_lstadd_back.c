@@ -25,16 +25,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	current->next = new;
 }
 
-//int main(void)
-//{
-//	t_list	*lst;
-//	t_list	*node1;
-//	t_list	*node2;
-//
-//	lst = ft_lstnew("apple");
-//	node1 = ft_lstnew("banana");
-//	node2 = ft_lstnew("fish");
-//	ft_lstadd_back(&lst, node1);
-//	ft_lstadd_back(&lst, node2);
-//	printf ("%s\n", (char *)ft_lstlast(lst)->content);
-//}	

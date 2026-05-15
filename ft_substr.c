@@ -22,7 +22,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -52,10 +51,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return ((char *)sub_s);
 }
 
-//int main(int argc, char **argv)
-//{
-//	if (argc != 4)
-//		return (1);
-//	printf("部分文字列は%s\n", ft_substr(argv[1], atoi(argv[2]), atoi(argv[3])));
-//	return (0);
-//}	

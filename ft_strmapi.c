@@ -12,13 +12,6 @@
 
 #include "libft.h"
 
-//char	f(unsigned int i, char c)
-//{
-//	(void)i;
-//	if (c >= 'a' && c <= 'z')
-//		return (c - 32);
-//	return (c);
-//}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -42,16 +35,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-//#include <stdio.h>
-//int main(void)
-//{
-//	char *re;
-//	char const *s = "idnqAndwi";
-//	
-//	re = ft_strmapi(s, f);
-//	if (re)
-//	{	
-//		printf ("%s\n", re);
-//		free (re);
-//	}	
-//}			
