@@ -6,12 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 14:00:39 by omito             #+#    #+#             */
-/*   Updated: 2026/05/15 15:22:10 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 20:19:44 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
@@ -30,4 +29,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	*lst = NULL;
 	return ;
 }
-

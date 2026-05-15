@@ -33,4 +33,3 @@ char	*ft_strdup(const char *s)
 	buf[j] = '\0';
 	return (buf);
 }
-

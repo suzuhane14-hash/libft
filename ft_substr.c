@@ -50,4 +50,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub_s[i] = '\0';
 	return ((char *)sub_s);
 }
-

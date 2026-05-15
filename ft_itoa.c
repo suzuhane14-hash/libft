@@ -60,4 +60,3 @@ char	*ft_itoa(int n)
 	str[digit_counter] = '\0';
 	return (str);
 }
-

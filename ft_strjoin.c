@@ -31,4 +31,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(new_s, s2, s1_len + s2_len + 1);
 	return (new_s);
 }
-
