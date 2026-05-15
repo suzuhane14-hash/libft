@@ -6,12 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 14:21:32 by omito             #+#    #+#             */
-/*   Updated: 2026/04/28 18:08:23 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:40:34 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

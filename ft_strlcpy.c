@@ -6,11 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 17:58:04 by omito             #+#    #+#             */
-/*   Updated: 2026/04/28 12:50:58 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:40:06 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 {

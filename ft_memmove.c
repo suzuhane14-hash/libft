@@ -6,11 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 20:20:15 by omito             #+#    #+#             */
-/*   Updated: 2026/04/26 21:31:10 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:37:58 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

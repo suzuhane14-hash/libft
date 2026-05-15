@@ -6,12 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 21:44:51 by omito             #+#    #+#             */
-/*   Updated: 2026/04/28 23:41:36 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:40:59 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

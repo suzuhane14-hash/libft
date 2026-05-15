@@ -6,12 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 18:11:19 by omito             #+#    #+#             */
-/*   Updated: 2026/04/28 21:10:45 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:36:32 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

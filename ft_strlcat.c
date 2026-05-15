@@ -6,11 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 21:56:55 by omito             #+#    #+#             */
-/*   Updated: 2026/04/27 20:23:04 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 20:08:51 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

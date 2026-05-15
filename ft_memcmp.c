@@ -6,12 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 21:11:59 by omito             #+#    #+#             */
-/*   Updated: 2026/04/28 21:43:54 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:36:50 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,12 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 18:52:07 by omito             #+#    #+#             */
-/*   Updated: 2026/04/29 20:33:33 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:39:02 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

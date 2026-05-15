@@ -6,11 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 23:42:21 by omito             #+#    #+#             */
-/*   Updated: 2026/04/29 12:13:50 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:35:11 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

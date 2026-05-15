@@ -6,11 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 17:36:56 by omito             #+#    #+#             */
-/*   Updated: 2026/04/26 18:46:52 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:35:48 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

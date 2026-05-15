@@ -6,11 +6,11 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 22:38:30 by omito             #+#    #+#             */
-/*   Updated: 2026/05/14 12:06:27 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:38:44 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {

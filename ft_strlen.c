@@ -6,12 +6,11 @@
 /*   By: omito <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 16:03:23 by omito             #+#    #+#             */
-/*   Updated: 2026/05/12 17:12:51 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/15 19:40:16 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
