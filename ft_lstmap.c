@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 15:58:45 by omito             #+#    #+#             */
-/*   Updated: 2026/05/15 17:03:52 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/19 00:13:17 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_node;
 	void	*new_content;
 
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	lst2 = NULL;
 	current = lst;
@@ -29,6 +29,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new_node = ft_lstnew(new_content);
 		if (!new_node)
 		{
+			del(new_content);
 			ft_lstclear(&lst2, del);
 			return (NULL);
 		}
