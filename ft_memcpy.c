@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 18:48:21 by omito             #+#    #+#             */
-/*   Updated: 2026/05/17 10:24:06 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/18 23:09:24 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	d = dest;
 	s = src;
 	i = 0;
+	if (d == NULL && s == NULL)
+		return (dest);
 	while (i < n)
 	{
 		*d = *s;

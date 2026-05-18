@@ -6,7 +6,7 @@
 /*   By: omito <omito@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 20:20:15 by omito             #+#    #+#             */
-/*   Updated: 2026/05/15 19:37:58 by omito            ###   ########.fr       */
+/*   Updated: 2026/05/18 23:37:49 by omito            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	d = dest;
 	s = src;
 	i = 0;
+	if (d == NULL && s == NULL)
+		return (dest);
 	if (d < s)
-	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
+		dest = ft_memcpy(d, s, n);
 	i = n;
 	if (d > s)
 	{
